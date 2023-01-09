@@ -1,11 +1,15 @@
 import BookCard from '../components/BookCard.js';
 import reviews from './reviews.js';
+import { Link } from 'react-router-dom';
+
 const HomePage = () => {
     return (
         <>
-            <h1> This is the Home Page</h1>
+            <h1> Home Page</h1>
             {reviews.map(review => 
-                <BookCard title={review.title} image= {review.image}/>
+                <Link to = {`review/${review.bookId}`}> 
+                    <BookCard title={review.title} image= {review.image}/>
+                </Link>
             )}
             
         </>
