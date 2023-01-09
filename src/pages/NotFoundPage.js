@@ -1,4 +1,4 @@
-const HomePage = () => {
+const NotFoundPage = () => {
     return (
         <>
             <h1> This is the Not-Found Page</h1>
@@ -6,4 +6,4 @@ const HomePage = () => {
     );
 }
 
-export default HomePage;
+export default NotFoundPage;

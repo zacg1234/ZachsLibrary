@@ -1,11 +1,11 @@
 import './App.css';
+import NavBar from './components/NavBar';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import NotFoundPage from './pages/NotFoundPage';
 import ReviewPage from './pages/ReviewPage'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
-import BookCard from './components/BookCard.js';
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <div className="App">
             <div id = "page-body">
             <h1> Zach's Book Reviews </h1>
-            <BookCard />
+            <NavBar />
               <Routes >
                 <Route path ="/" element = {<HomePage/>} />
                 <Route path ="/about" element = {<AboutPage/>} />

@@ -1,12 +1,9 @@
-import logo from '../logo.svg';
-
-const BookCard = () => {
+const BookCard = ({title, image}) => {
+    
     return (
     <>
-    <img src={logo} className="App-logo" alt="logo" />
-    <p>
-        Edit <code>src/App.js</code> and save to reload.
-    </p>
+        <img src={image} className="App-logo" alt="logo" /> 
+        <h2>{title} </h2>
     </> 
     );
    
