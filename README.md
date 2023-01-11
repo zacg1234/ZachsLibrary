@@ -68,3 +68,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+Zach's Notes:
+
+The book image files are stored in an amazon S3 bucket. 
+
+The data is stored in DynamoDB   (Data Layer)
+
+The API endpoints are made with API Gateway, and call a Lambda function to serve as the middlewear
