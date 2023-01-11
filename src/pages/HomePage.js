@@ -5,19 +5,18 @@ import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
 const HomePage = () => {
-    const [bookReviewsData, setBookReveiwsData] = useState([]);
+    const [bookReviewsData, setBookReviewsData] = useState([]);
 
     const loadBookReviewsData = async() => {
         const resp = await fetch('https://5zjf4cji6k.execute-api.us-east-2.amazonaws.com/reviews');
         let jsonData = await resp.json();
 
-        setBookReveiwsData(jsonData);
+        setBookReviewsData(jsonData);
         //console.log(bookReviewsData);
     }
 
     useEffect(() => {
-            loadBookReviewsData();
-            
+        loadBookReviewsData();    
     }, []);
 
     return (
