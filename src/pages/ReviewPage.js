@@ -20,11 +20,11 @@ const ReviewPage = () => {
 
    
     return (
-        <>
-            <img src= {bookReview.image} className="App-logo" alt="logo" /> 
+        <div className="ReviewPage">
+            <img src= {bookReview.image} alt="logo" /> 
             <h1> {bookReview.title} </h1>
             <h3> {bookReview.review} </h3>
-        </>
+        </div>
     );
 }
 

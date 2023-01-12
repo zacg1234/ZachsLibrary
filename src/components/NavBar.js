@@ -4,10 +4,10 @@ const NavBar = () => {
        <nav>
             <ul>
                 <li> 
-                    <Link to="/"> Home </Link> 
+                    <Link className='link' to="/"> Home </Link> 
                 </li>
                 <li> 
-                    <Link to="/About"> About </Link>  
+                    <Link className='link' to="/About"> About </Link>  
                 </li>
             </ul>
        </nav>

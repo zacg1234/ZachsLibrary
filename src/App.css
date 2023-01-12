@@ -1,13 +1,56 @@
-.App {
-  text-align: center;
+* {
+  background-color: #111111;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1, h2, h3, p {
+  color: antiquewhite;
+}
+
+.nav {
+  display: inline-block;
+  margin: 30px 3vw 50px 3vw ;
+}
+
+.link {
+  color: #7FD0B3;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.link:hover {
+  background-color: antiquewhite;
+}
+
+.App {
+  text-align: center;
+  margin-right: 15vw;
+  margin-left: 15vw;
 }
 
 .BookCard {
   display: inline-block;
   margin: 20px;
+  border: 2px solid antiquewhite;
+  padding: 20px;
+  border-radius: 2% 10% 10% 2%;
+}
+.BookCard:hover {
+  box-shadow: 10px 10px 10px black;
+  border: 3px solid white;
+}
+.BookCard img:hover {
+  height: 42vmin;
+}
+
+img {
+  height: 40vmin;
+  transition-property: height;
+  transition-duration: 1s;
+  transition-delay: 0s;
+  border-radius: 2% 10% 10% 2%;
+}
+
+.ReviewPage {
+  text-align: center;
 }

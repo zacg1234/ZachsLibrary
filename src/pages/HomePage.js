@@ -20,16 +20,14 @@ const HomePage = () => {
     }, []);
 
     return (
-        <>
-            <h1> Home Page</h1>
+        <div>
             {     
                 bookReviewsData.map((review) => 
                     <Link key = {review.bookId}  to = {`review/${review.bookId}`}> 
                         <BookCard title={review.title} image ={review.image} />
                     </Link>
             )}
-            
-        </>
+        </div>
     );
 }
 
