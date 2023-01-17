@@ -1,7 +1,9 @@
+import aboutMe from "../resources/text.js"
 const AboutPage = () => {
     return (
         <>
-            <h1> This is the About Page</h1>
+            <h1> About Me</h1>
+            <p> {aboutMe} </p>
         </>
     );
 }
