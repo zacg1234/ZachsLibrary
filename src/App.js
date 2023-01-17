@@ -12,9 +12,9 @@ function App() {
     <BrowserRouter >
       <div className="App">
             <div id = "page-body">
-            <Link className="nav link" to="/"> Home </Link> 
+            <Link className="nav link" to="/"> HOME </Link> 
             <h1 className='nav' id='title'> Zach's Library </h1>
-            <Link className="nav link" to="/About"> About </Link>  
+            <Link className="nav link" to="/About"> ABOUT </Link>  
               <Routes >
                 <Route path ="/" element = {<HomePage/>} />
                 <Route path ="/about" element = {<AboutPage/>} />
